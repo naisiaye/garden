@@ -15,3 +15,129 @@ body {
   background-color: wheat;
   text-align: center;
 }
+#level-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#level-2 {
+  display: grid;
+}
+#level-2 .peas {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+#level-3 {
+  display: grid;
+}
+#level-3 .peas {
+  display: grid;
+  grid-column: 1;
+}
+#level-3 .onions {
+  display: grid;
+  grid-column: 2 / span 2;
+}
+#level-3 .tomatoes {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+#level-3 .carrots {
+  display: grid;
+  grid-column: 1 / span 3;
+}
+#level-4 {
+  display: grid;
+  grid-column: repeat(4, 1fr);
+}
+#level-4 .peas {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+#level-4 .onions {
+  display: grid;
+  grid-row: 1 / span 2;
+  grid-column: 3;
+}
+#level-4 .tomatoes {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+#level-4 .carrots {
+  display: grid;
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+#level-5 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+#level-5 .carrots {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+#level-5 .tomatoes {
+  display: grid;
+  grid-column: 2 / span 3;
+  grid-row: 3;
+}
+#level-5 .onions {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+#level-5 .peas {
+  display: grid;
+  grid-column: 4 / span 2;
+  grid-row: 2;
+}
+#level-5 .lettuce {
+  display: grid;
+  grid-column: 5;
+  grid-row: 1;
+}
+#level-6 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+#level-6 .carrots {
+  display: grid;
+  grid-column: 1 / span 5;
+  grid-row: 1;
+}
+#level-6 .onions {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+#level-6 .peas {
+  display: grid;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
+#level-6 .tomatoes {
+  display: grid;
+  /* grid-column: 5; */
+  grid-row: 2 / span 2;
+}
+#level-6 .lettuce {
+  display: grid;
+  grid-column: 1 / span 5;
+}
+#level-7 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(5ch, 1fr));
+}
+#level-8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 15ch));
+  grid-auto-rows: 5ch;
+}
+#level-9 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-auto-rows: 5rem;
+}
